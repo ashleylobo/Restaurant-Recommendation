@@ -357,7 +357,7 @@
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 30rem;">
-                <img class="card-img-top" src="user.png" alt="Card image cap">
+                <img id="usr"class="card-img-top" src="user.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 id="name"class="card-title" style="color:black;font-size:20px;">Riya Patil</h5>
                   <p class="card-text" style="color:black;font-size:20px;">Type: <span id="person1"></span><br>Budget: <span id="person2"></span><br> Drink_level: <span id="person3"></span><br> Transport: <span id="person4"></span><br> </p>
@@ -799,6 +799,8 @@
     $("#name").html(data.profile.name);
     $("#name2").html(data.profile.name);
     $("#name3").html(data.profile.name);
+    console.log(data.profile.name.split(" ")[0])
+    $("#usr").attr("src",data.profile.name.split(" ")[0]+".jpeg");
     $("#person1").html(data.userData.activity);
     $("#person2").html(data.userData.budget);
     $("#person3").html(data.userData.drink_level);
