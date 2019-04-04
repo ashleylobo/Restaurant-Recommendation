@@ -39,9 +39,9 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form class="user" action="index.html" method="GET">
+                  <form id="form" class="user" action="index.html" method="GET">
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" name="userid" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter UserID">
+                      <input type="text" class="form-control form-control-user" name="user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter UserID">
                     </div>
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
@@ -91,7 +91,42 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+	<script>
+		var allowsubmit = false;
+		$(function(){
+			//on keypress 
+			$('#exampleInputPassword').keyup(function(e){
+				//get values 
+				var pass = $('#exampleInputPassword').val();
+				var confpass ='123';
+				console.log(pass)
+				//check the strings
+				if(pass == confpass){
+					//if both are same remove the error and allow to submit
 
+					allowsubmit = true;
+				}else{
+					//if not matching show error and not allow to submit
+
+					allowsubmit = false;
+				}
+			});
+			
+			//jquery form submit
+			$('#form').submit(function(){
+			
+        console.log(allowsubmit)
+				//just to make sure once again during submit
+				//if both are true then only allow submit
+
+				if(allowsubmit){
+					return true;
+				}else{
+					return false;
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
