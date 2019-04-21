@@ -42,7 +42,7 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="">
-          <span id="name3">Riya Patil</span></a>
+          <span id="name3">User</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="">
@@ -312,7 +312,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span  id="name2"class="mr-2 d-none d-lg-inline text-gray-600 small">Riya Patil</span>
+                <span  id="name2"class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
@@ -330,9 +330,9 @@
                   Activity Log
                 </a> -->
                 <!-- <div class="dropdown-divider"></div> -->
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                <a id="login1" class="dropdown-item" href="login.html" >
+                  <i  class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Login
                 </a>
               </div>
             </li>
@@ -355,167 +355,90 @@
 
 
             <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card" style="width: 30rem;">
-                <img id="usr"class="card-img-top" src="user.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 id="name"class="card-title" style="color:black;font-size:20px;">Riya Patil</h5>
-                  <p class="card-text" style="color:black;font-size:20px;">Type: <span id="person1"></span><br>Budget: <span id="person2"></span><br> Drink_level: <span id="person3"></span><br> Transport: <span id="person4"></span><br> </p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <!-- <div class="card" style="width: 18rem;">
 
-              </div> -->
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <!-- <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="chipotle.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="IndividualPage.html" class="btn btn-primary">Visit Page</a>
-                </div>
-              </div> -->
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <!-- <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="costaCofee.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="IndividualPage.html" class="btn btn-primary">Visit Page</a>
-                </div>
-              </div> -->
-            </div>
             <h1>Recommended</h1>
             <div class="row">
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img0" class="card-img-top" src="starBucks.png" alt="Card image cap">
+                <img id="img0" class="card-img-top" src="https://i.imgur.com/v2HxvF3.jpg" alt="Burger King" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest0" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat0"></span><br>Location: <span id="loc0"></span><br> Address: <span id="add0"></span><br> Phone No: <span id="phn0"></span><br> </p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest0" class="card-title">Burger King</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat0">3</span><br>Location: <span id="loc0">Phoenix Marketcity</span><br> Address: <span id="add0">F-40A&B, LBS Rd, Kurla West, Mumbai, Maharashtra 400070</span><br> Phone No: <span id="phn0">022 6180 1790</span><br> </p>
+                  <a onclick="javascript:gotoNewPage(0)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img1" class="card-img-top" src="chipotle.png" alt="Card image cap">
+                <img id="img1" class="card-img-top" src="https://i.imgur.com/BaFvbwi.jpg" alt="Starbucks" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest1" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat1"></span><br>Location: <span id="loc1"></span><br> Address: <span id="add1"></span><br> Phone No: <span id="phn1"></span><br></p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest1" class="card-title">Starbucks</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat1">4</span><br>Location: <span id="loc1">Goregaon</span><br> Address: <span id="add1"> Second floor, Oberoi Mall General AK Vidya Marg, Western Express Hwy, Yashodham, Goregaon East, Mumbai, Maharashtra 400063</span><br> Phone No: <span id="phn1">022 6799 1176</span><br></p>
+                  <a onclick="gotoNewPage(1)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img2" class="card-img-top" src="starBucks.png" alt="Card image cap">
+                <img id="img2" class="card-img-top" src="https://i.imgur.com/HcJBO3f.jpg" alt="Barbeque Nation" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest2" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat2"></span><br>Location: <span id="loc2"></span><br> Address: <span id="add2"></span><br> Phone No: <span id="phn2"></span><br></p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest2" class="card-title">Barbeque Nation</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat2">2</span><br>Location: <span id="loc2">Santa Cruz</span><br> Address: <span id="add2">Ground Floor, Hotel Melno Palace, Spencer Rd, Santa Cruz, Mumbai, Maharashtra 400050</span><br> Phone No: <span id="phn2">022 28282828</span><br></p>
+                  <a onclick="gotoNewPage(2)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img3" class="card-img-top" src="burger.png" alt="Card image cap">
+                <img id="img3" class="card-img-top" src="https://i.imgur.com/b0awqEb.jpg" alt="Tea Villa Cafe" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest3" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat3"></span><br>Location: <span id="loc3"></span><br> Address: <span id="add3"></span><br> Phone No: <span id="phn3"></span><br></p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest3" class="card-title">Tea Villa Cafe</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat3">2</span><br>Location: <span id="loc3">Andheri</span><br> Address: <span id="add3">Hakone Children's Park, Next to Powai Plaza, Hiranandani Gardens, Powai, Mumbai, Maharashtra 400076</span><br> Phone No: <span id="phn3">9830098122</span><br></p>
+                  <a onclick="gotoNewPage(3)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img4" class="card-img-top" src="chipotle.png" alt="Card image cap">
+                <img id="img4" class="card-img-top" src="https://i.imgur.com/kHJMtFt.png" alt="Gokul Cafe" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest4" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat4"></span><br>Location: <span id="loc4"></span><br> Address: <span id="add4"></span><br> Phone No: <span id="phn4"></span><br></p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest4" class="card-title">Gokul Cafe</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat4">2</span><br>Location: <span id="loc4">Khar</span><br> Address: <span id="add4">Shop No. 2 , Kalpitam Apartments, 16th Road, Pali Village, Khar West, Near Hawaiian Shack, Mumbai, Maharashtra 400050</span><br> Phone No: <span id="phn4">9810098200</span><br></p>
+                  <a onclick="gotoNewPage(4)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img5" class="card-img-top" src="costaCofee.png" alt="Card image cap">
+                <img id="img5" class="card-img-top" src="https://i.imgur.com/HPwNW6E.jpg" alt="Burger Palace" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest5" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat5"></span><br>Location: <span id="loc5"></span><br> Address: <span id="add5"></span><br> Phone No: <span id="phn5"></span><br></p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest5" class="card-title">Burger Palace</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat5">3</span><br>Location: <span id="loc5">Malad West</span><br> Address: <span id="add5">Vinay Industrial Estate, Near Chincholi Bunder Road, New Link Rd, Ram Nagar, Malad West, Mumbai, Maharashtra 400064</span><br> Phone No: <span id="phn5">9456595465</span><br></p>
+                  <a onclick="gotoNewPage(5)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img6" class="card-img-top" src="starBucks.png" alt="Card image cap">
+                <img id="img6" class="card-img-top" src="https://i.imgur.com/S6ZVJqq.jpg" alt="Jimi's Burger" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest6" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat6"></span><br>Location: <span id="loc6"></span><br> Address: <span id="add6"></span><br> Phone No: <span id="phn6"></span><br></p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest6" class="card-title">Jimi's Burger</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat6">2</span><br>Location: <span id="loc6">Ghatkopar East</span><br> Address: <span id="add6">90 Feet Road, Savitribai Phule Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400075</span><br> Phone No: <span id="phn6">9820098200</span><br></p>
+                  <a onclick="gotoNewPage(6)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card" style="width: 18rem;">
-                <img id="img7" class="card-img-top" src="costaCofee.png" alt="Card image cap">
+                <img id="img7" class="card-img-top" src="https://i.imgur.com/AV5417D.jpg" alt="Domino's Pizza" style="width:18rem;height:230px; ">
                 <div class="card-body">
-                  <h5 id="rest7" class="card-title">Card title</h5>
-                  <p class="card-text" style="color:black">Rating: <span id="rat7"></span><br>Location: <span id="loc7"></span><br> Address: <span id="add7"></span><br> Phone No: <span id="phn7"></span><br></p>
-                  <!-- <a href="#" class="btn btn-primary">Visit Page</a> -->
+                  <h5 id="rest7" class="card-title">Domino's Pizza</h5>
+                  <p class="card-text" style="color:black">Rating: <span id="rat7">1</span><br>Location: <span id="loc7">Bandra</span><br> Address: <span id="add7">204, Linking Rd, Khar West, Mumbai, Maharashtra 40005</span><br> Phone No: <span id="phn7">9854498365</span><br></p>
+                  <a onclick="gotoNewPage(7)" class="btn btn-primary" style="color:white">Visit Page</a>
                 </div>
               </div>
             </div>
 
-
-            <!-- Earnings (Monthly) Card Example -->
-            <!-- <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- Earnings (Monthly) Card Example -->
-            <!-- <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
 
             <!-- Pending Requests Card Example -->
             <!-- <div class="col-xl-3 col-md-6 mb-4">
@@ -535,195 +458,13 @@
             </div>
           </div> -->
 
-          <!-- Content Row -->
 
-          <!-- <div class="row"> -->
-
-            <!-- Area Chart -->
-            <!-- <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4"> -->
-                <!-- Card Header - Dropdown -->
-                <!-- <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="IndividualPage.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- Card Body -->
-                <!-- <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- Pie Chart -->
-            <!-- <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4"> -->
-                <!-- Card Header - Dropdown -->
-                <!-- <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- Card Body -->
-                <!-- <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
 
           <!-- Content Row -->
           <div class="row">
 
             <!-- Content Column -->
             <div class="col-lg-6 mb-4">
-
-              <!-- Project Card Example -->
-              <!-- <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
-                </div>
-                <div class="card-body">
-                  <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- Color System -->
-              <!-- <div class="row">
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-primary text-white shadow">
-                    <div class="card-body">
-                      Primary
-                      <div class="text-white-50 small">#4e73df</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-success text-white shadow">
-                    <div class="card-body">
-                      Success
-                      <div class="text-white-50 small">#1cc88a</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-info text-white shadow">
-                    <div class="card-body">
-                      Info
-                      <div class="text-white-50 small">#36b9cc</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-warning text-white shadow">
-                    <div class="card-body">
-                      Warning
-                      <div class="text-white-50 small">#f6c23e</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-danger text-white shadow">
-                    <div class="card-body">
-                      Danger
-                      <div class="text-white-50 small">#e74a3b</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-secondary text-white shadow">
-                    <div class="card-body">
-                      Secondary
-                      <div class="text-white-50 small">#858796</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div> -->
-
-            <!-- <div class="col-lg-6 mb-4"> -->
-
-              <!-- Illustrations -->
-              <!-- <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-                </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="">
-                  </div>
-                  <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
-                  <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
-                </div>
-              </div> -->
-
-              <!-- Approach -->
-              <!-- <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                </div>
-                <div class="card-body">
-                  <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
-                  <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
-                </div>
-              </div> -->
-
-
             </div>
           </div>
 
@@ -767,7 +508,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a id="login" class="btn btn-primary" href="login.html">Login</a>
         </div>
       </div>
     </div>
@@ -790,11 +531,46 @@
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
   <script>
+      var apiData;
+    function gotoNewPage( i){
+    if(typeof apiData !== "undefined"){
+        //variable exists, do what you want
+        console.log(apiData);
+        window.location.href="IndividualPage.html?userName="+apiData.profile.name.split(" ")[0]+"&hotelid="+apiData.hotels[i].hotelId;
+    }
+    else if($('#name2').html()=='User'){
+      if(i==0)
+       num=134986
+      else if(i==1)
+        num=135034
+        else if(i==2)
+        num=135075
+        else if(i==3)
+        num=134976
+        else if(i==4)
+        num=132768
+        else if(i==5)
+        num=132922  
+        else if(i==6)
+        num=135074  
+        else if(i==7)
+        num=135035 
+      window.location.href="IndividualPage.html?userName=user&hotelid="+num;
+    }
+    else{
+        setTimeout(gotoNewPage, 250);
+    }
+}    
+
 
     $(document).ready(function(){
 
-    console.log( window.location.search.substr(1))
-    $.get("https://obscure-savannah-81755.herokuapp.com/predict?"+window.location.search.substr(1), function(data, status){
+    console.log(window.location.search.substr(1))
+    if(window.location.search.substr(1)!=""){
+      console.log("in")
+      $.get("https://obscure-savannah-81755.herokuapp.com/predict?"+window.location.search.substr(1), function(data, status){
+    apiData=data;
+    console.log(apiData);
     console.log(data.profile.name)
     $("#name").html(data.profile.name);
     $("#name2").html(data.profile.name);
@@ -805,6 +581,7 @@
     $("#person2").html(data.userData.budget);
     $("#person3").html(data.userData.drink_level);
     $("#person4").html(data.userData.transport);
+    
     $("#img0").attr("src",data.hotels[0].imageUrl);
     $("#img1").attr("src",data.hotels[1].imageUrl);
     $("#img2").attr("src",data.hotels[2].imageUrl);
@@ -853,11 +630,18 @@
     $("#phn5").html(data.hotels[5].phoneNo);
     $("#phn6").html(data.hotels[6].phoneNo);
     $("#phn7").html(data.hotels[7].phoneNo);
+    $("#login").html("logout");
+    $("#login1").html("logout");
 
 
   });
 
-})       
+    }
+ 
+
+    
+}) 
+ 
 </script>
 
 </body>
